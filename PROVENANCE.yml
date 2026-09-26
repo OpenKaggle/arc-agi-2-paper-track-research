@@ -1,0 +1,54 @@
+schema_version: 1
+repository:
+  name: arc2-paper-research
+  url: https://github.com/openkaggle/arc2-paper-research
+snapshot:
+  kind: public-research-snapshot
+  status: research_snapshot
+  status_note: >-
+    In-progress ARC-AGI-2 and Paper Track research archive; no final-ready
+    submission or generalization claim is made by this release metadata.
+  rules_checked_at: "2026-09-09"
+  rules_check_note: >-
+    The README says external facts were checked on this date. This is a
+    historical record, not a current rules revalidation.
+competitions:
+  - name: ARC Prize 2026 - ARC-AGI-2
+    url: https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2
+  - name: ARC Prize 2026 - Paper Track
+    url: https://www.kaggle.com/competitions/arc-prize-2026-paper-track
+included:
+  - original orchestration, analysis scripts, and validators
+  - candidate notebook builders, private metadata, and factual upstream metadata
+  - contributor-authored TRM compatibility smoke notebook source
+  - paper research records
+  - paper protocols, manifests, tests, and lightweight evaluation records
+  - compact factual receipts and hash-bound provenance records
+excluded:
+  - competition files and downloaded competition inputs
+  - generated submission payloads
+  - compiled caches and virtual environments
+  - model checkpoints and model weights
+  - third-party notebook payloads and near-complete derivatives without redistribution evidence
+  - generated cover candidates pending publication-terms clearance
+licensing:
+  original_work: MIT-0
+  boundary: >-
+    MIT-0 covers only new OpenKaggle orchestration and documentation for which
+    contributors hold rights.
+  third_party: >-
+    Competition data, inherited Apache-2.0 components, official code, model
+    assets, and third-party notebooks retain their own terms and notices.
+reproduction:
+  guide: REPRODUCIBILITY.md
+  public_snapshot_manifest: PUBLIC_SNAPSHOT_MANIFEST.sha256
+  tracked_file_count: 168
+  manifest_entry_count: 167
+  documented_entry_points:
+    - README.md
+    - paper/06_reproducibility_checklist.md
+    - run_exact_rule_heldout_audit.py
+    - run_neurogolf_dsl_baseline.py
+claims:
+  current_final_ready: false
+  score_claim_added_by_release_docs: false

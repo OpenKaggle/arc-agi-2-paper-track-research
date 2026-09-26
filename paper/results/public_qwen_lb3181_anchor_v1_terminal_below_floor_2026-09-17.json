@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "receipt_type": "arc2_public_qwen_anchor_terminal_below_score_floor",
+  "observed_at_utc": "2026-09-17T08:12:07.961Z",
+  "observed_at_cst": "2026-09-17T16:12:07.961+08:00",
+  "competition": "arc-prize-2026-arc-agi-2",
+  "lineage": {
+    "source_public_notebook": "qiuqiuh/arc-highscore-lb3389-replica",
+    "source_page_score_display": 31.81,
+    "source_page_score_normalized": 0.3181,
+    "source_page_score_status": "THIRD_PARTY_PAGE_CLAIM_NOT_INDEPENDENTLY_REPRODUCED",
+    "submitted_kernel_ref": "jahyee/arc2-public-qwen-lb31-81-anchor-v1",
+    "kernel_id": 134648497,
+    "run_id": 350403559,
+    "script_version_id": 350403559,
+    "version": 1,
+    "notebook_sha256": "95c9274c8c17d69e2e91867bfc6ef93d9ce1f046eec2a85a3cc6148bf961bcbe"
+  },
+  "submission": {
+    "id": 56287444,
+    "file_name": "submission.json",
+    "submitted_at_utc": "2026-09-16T21:08:35.533000Z",
+    "submitted_at_cst": "2026-09-17T05:08:35.533000+08:00",
+    "terminal_status": "SubmissionStatus.COMPLETE",
+    "public_score_display": 28.89,
+    "public_score_normalized": 0.2889,
+    "private_score": null
+  },
+  "score_gate": {
+    "minimum_display": 29.0,
+    "minimum_normalized": 0.29,
+    "public_score_display": 28.89,
+    "public_score_normalized": 0.2889,
+    "margin_display_percentage_points": -0.11,
+    "margin_normalized": -0.0011,
+    "passed": false,
+    "terminal_action": "ARCHIVE_ANCHOR_WITH_SCORE_RECEIPT"
+  },
+  "failure_attribution": {
+    "category": "PUBLIC_SCORE_BELOW_FLOOR",
+    "runtime_failure": false,
+    "format_or_schema_failure": false,
+    "dependency_failure": false,
+    "hidden_public_set_generalization_below_gate": true,
+    "explanation": "The exact frozen notebook passed local and private Kaggle runtime/schema gates, then completed the competition rerun at 28.89, which is 0.11 percentage points below the mandatory 29.0 floor."
+  },
+  "budget_and_actions": {
+    "private_dry_runs_used": 1,
+    "dependency_repairs_used": 0,
+    "competition_submissions_used": 1,
+    "additional_submission_authorized": false,
+    "additional_kernel_push_authorized": false,
+    "additional_public_anchor_authorized": false,
+    "old_v2_or_trm_route_authorized": false,
+    "archive_status": "TERMINAL_ARCHIVED_BELOW_FLOOR"
+  },
+  "evidence": {
+    "dry_run_receipt": {
+      "path": "paper/results/public_qwen_lb3181_anchor_v1_kaggle_dry_run_2026-09-17.json",
+      "sha256": "5239fb5ebc7ea774aa7eeb5996eb059d0ae89306855604821a365f8bd5dd7448"
+    },
+    "submission_launch_receipt": {
+      "path": "paper/results/public_qwen_lb3181_anchor_v1_submission_launch_2026-09-17.json",
+      "sha256": "934d200cd90eba47fdc60b11c7d8fab333327b28bfd2b68fded8896dd5a62cb9"
+    },
+    "terminal_observation": "Kaggle CLI listed submission 56287444 as SubmissionStatus.COMPLETE with publicScore 28.89."
+  },
+  "claim_boundary": "The only authorized public anchor completed at 28.89 and failed the 29.0 gate. The public source page's 31.81 score was not independently reproduced. This route is terminally archived without a repair, second submission, alternate public anchor, or return to V2/TRM."
+}

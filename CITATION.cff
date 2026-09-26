@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: >-
+  If this research snapshot supports your work, cite it as software and review
+  NOTICE.md for competition and third-party licensing boundaries.
+title: ARC-AGI-2 and Paper Track Research Snapshot
+type: software
+authors:
+  - name: OpenKaggle contributors
+repository-code: https://github.com/openkaggle/arc2-paper-research
+license: MIT-0
+abstract: >-
+  Public research snapshot of ARC-AGI-2 and Paper Track orchestration,
+  protocols, tests, notebook sources, and lightweight evaluation records.

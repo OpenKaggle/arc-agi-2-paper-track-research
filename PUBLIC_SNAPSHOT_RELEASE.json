@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "FINAL_PUBLIC_RESEARCH_SNAPSHOT",
+  "prepared_at": "2026-09-27",
+  "repository": "openkaggle/arc2-paper-research",
+  "scope": "contributor-owned source, paper notes, contributor-authored smoke notebook source, candidate metadata, and lightweight evidence records",
+  "manifest": "PUBLIC_SNAPSHOT_MANIFEST.sha256",
+  "manifest_rule": "covers every tracked file except PUBLIC_SNAPSHOT_MANIFEST.sha256 itself",
+  "tracked_file_count": 168,
+  "manifest_entry_count": 167,
+  "excluded_conservative_notebook_payload_count": 6,
+  "excluded_classes": [
+    "competition inputs and evaluator labels",
+    "generated submission payloads",
+    "model weights and checkpoints",
+    "run mirrors, logs, caches, and virtual environments",
+    "third-party notebook payloads and near-complete derivatives without redistribution evidence",
+    "generated cover PNGs pending publication-terms clearance"
+  ],
+  "claim_boundary": {
+    "final_competition_package_ready": false,
+    "winning_or_generalization_claim": false,
+    "historical_test_suite_hermetic": false
+  }
+}
