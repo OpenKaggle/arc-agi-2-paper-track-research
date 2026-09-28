@@ -6,7 +6,7 @@ title: ARC-AGI-2 and Paper Track Research Snapshot
 type: software
 authors:
   - name: OpenKaggle contributors
-repository-code: https://github.com/openkaggle/arc2-paper-research
+repository-code: https://github.com/OpenKaggle/arc-agi-2-paper-track-research
 license: MIT-0
 abstract: >-
   Public research snapshot of ARC-AGI-2 and Paper Track orchestration,

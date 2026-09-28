@@ -287,3 +287,17 @@ Paper figures to update automatically from the ledger:
 - <https://arcprize.org/competitions/2026>
 - <https://arcprize.org/competitions/2026/paper>
 - <https://github.com/arcprize/ARC-AGI-2>
+
+## Cite this repository
+
+Please cite the repository snapshot and the immutable commit or tag you used.
+
+```bibtex
+@software{openkaggle_arc_agi_2_paper_track_2026,
+  author = {OpenKaggle contributors},
+  title = {ARC-AGI-2 and Paper Track Research Snapshot},
+  year = {2026},
+  url = {https://github.com/OpenKaggle/arc-agi-2-paper-track-research},
+  version = {snapshot-2026-09}
+}
+```
