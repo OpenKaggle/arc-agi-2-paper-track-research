@@ -5,7 +5,7 @@ message: >-
 title: ARC-AGI-2 and Paper Track Research Snapshot
 type: software
 authors:
-  - name: OpenKaggle contributors
+  - name: Jah-yee
 repository-code: https://github.com/OpenKaggle/arc-agi-2-paper-track-research
 license: MIT-0
 abstract: >-
