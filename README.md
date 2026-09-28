@@ -294,7 +294,7 @@ Please cite the repository snapshot and the immutable commit or tag you used.
 
 ```bibtex
 @software{openkaggle_arc_agi_2_paper_track_2026,
-  author = {OpenKaggle contributors},
+  author = {Jah-yee},
   title = {ARC-AGI-2 and Paper Track Research Snapshot},
   year = {2026},
   url = {https://github.com/OpenKaggle/arc-agi-2-paper-track-research},
