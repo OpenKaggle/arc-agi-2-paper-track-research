@@ -1,0 +1,23 @@
+ablation_id,system_group,candidate_pool,candidate_budget,selector,diversity_policy,safety_gate,fold_or_set,task_outputs,attempt1_exact,attempt2_incremental,pass2_exact,pass2_rate,delta_vs_anchor,beneficial_overrides,harmful_overrides,abstention_coverage,oracle_union,oracle_gain_over_anchor,oracle_gap_recovery,selector_regret,brier,ece,wall_seconds,peak_memory_mb,status,artifact_hash,notes
+A0,main,neural_anchor,equal_compute,native_anchor,native,none,planned,,,,,,,,,,,,,,,,,,planned,,Frozen reference
+A1,main,neural_plus_trm,equal_compute,raw_rank,none,none,planned,,,,,,,,,,,,,,,,,,planned,,Candidate-family control
+A2,main,neural_plus_trm_plus_program,equal_compute,raw_rank,none,none,planned,,,,,,,,,,,,,,,,,,planned,,Program-union control
+A3,main,neural_plus_trm_plus_program,equal_compute,calibrated_pointwise,none,none,planned,,,,,,,,,,,,,,,,,,planned,,Calibration only
+A4,main,neural_plus_trm_plus_program,equal_compute,calibrated,residual_conditional,none,planned,,,,,,,,,,,,,,,,,,planned,,Diversity allocation
+A5,main,neural_plus_trm_plus_program,equal_compute,calibrated,residual_conditional,full,planned,,,,,,,,,,,,,,,,,,planned,,Full proposed method
+A6,ceiling,neural_plus_trm_plus_program,equal_compute,label_oracle,label_oracle,none,planned,,,,,,,,,,,,,,,,,,planned,,Non-deployable ceiling only
+E1,evidence_ablation,same_receipts_as_A5,fixed,calibrated_minus_loo,residual_conditional,full,planned,,,,,,,,,,,,,,,,,,planned,,Remove leave-one-demo-out
+E2,evidence_ablation,same_receipts_as_A5,fixed,calibrated_minus_contracts,residual_conditional,full,planned,,,,,,,,,,,,,,,,,,planned,,Remove metamorphic contracts
+E3,evidence_ablation,same_receipts_as_A5,fixed,calibrated_minus_agreement,residual_conditional,full,planned,,,,,,,,,,,,,,,,,,planned,,Remove cross-family agreement
+E4,evidence_ablation,same_receipts_as_A5,fixed,calibrated_minus_structure,residual_conditional,full,planned,,,,,,,,,,,,,,,,,,planned,,Keep only hard schema checks
+E5,evidence_ablation,same_receipts_as_A5,fixed,calibrated_minus_complexity,residual_conditional,full,planned,,,,,,,,,,,,,,,,,,planned,,Remove description length
+E6,evidence_ablation,same_receipts_as_A5,fixed,calibrated,residual_conditional,no_ood_abstention,planned,,,,,,,,,,,,,,,,,,planned,,Remove support-distance gate
+E7,evidence_ablation,same_receipts_as_A5,fixed,calibrated,family_identity_only,full,planned,,,,,,,,,,,,,,,,,,planned,,Remove learned residual dependence
+E8,evidence_ablation,same_receipts_as_A5,fixed,agreement_only,none,full,planned,,,,,,,,,,,,,,,,,,planned,,Agreement-only baseline
+E9,evidence_ablation,same_receipts_as_A5,fixed,calibrated,random_distinct,full,planned,,,,,,,,,,,,,,,,,,planned,,Fixed-seed random slot two
+B25,budget,full_portfolio,25_percent,calibrated,residual_conditional,full,planned,,,,,,,,,,,,,,,,,,planned,,Budget curve
+B50,budget,full_portfolio,50_percent,calibrated,residual_conditional,full,planned,,,,,,,,,,,,,,,,,,planned,,Budget curve
+B75,budget,full_portfolio,75_percent,calibrated,residual_conditional,full,planned,,,,,,,,,,,,,,,,,,planned,,Budget curve
+B100,budget,full_portfolio,100_percent,calibrated,residual_conditional,full,planned,,,,,,,,,,,,,,,,,,planned,,Canonical budget
+S0,reproducibility,conservative_agreement_v1,equal_compute,conservative_agreement,native,fixed,planned,,,,,,,,,,,,,,,,,,planned,,Process-randomized task hash control
+S1,reproducibility,conservative_agreement_stable_v2,equal_compute,conservative_agreement,native,fixed,development48_run_348340917,50,47,1,48,0.96,0,0,0,,48,0,,0,,,4548,16082,failed_runtime_gate,771f7aa220a8c5b1ebd94ac6990d93fada1642002ad9ff70d27e0ee3118f534a,TRM produced no candidate; F00 optimizer init and F01 incomplete decode; operational fallback identical to anchor; oracle-gap recovery undefined; holdout stopped

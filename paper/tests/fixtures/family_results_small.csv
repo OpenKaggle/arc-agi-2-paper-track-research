@@ -1,0 +1,13 @@
+task_id,output_index,solver_family,exact_correct
+0a1b2c3d,0,neural,1
+0a1b2c3d,0,trm,0
+0a1b2c3d,0,program,0
+1a2b3c4d,0,neural,0
+1a2b3c4d,0,trm,1
+1a2b3c4d,0,program,1
+2a3b4c5d,0,neural,0
+2a3b4c5d,0,trm,0
+2a3b4c5d,0,program,0
+3a4b5c6d,0,neural,0
+3a4b5c6d,0,trm,0
+3a4b5c6d,0,program,1

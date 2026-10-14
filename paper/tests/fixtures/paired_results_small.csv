@@ -1,0 +1,5 @@
+task_id,output_index,anchor_attempt_1_correct,anchor_attempt_2_correct,method_attempt_1_correct,method_attempt_2_correct,oracle_pool_correct
+0a1b2c3d,0,1,0,1,0,1
+1a1b2c3d,0,0,0,0,1,1
+2a1b2c3d,0,0,1,0,0,1
+3a1b2c3d,0,0,0,0,0,0

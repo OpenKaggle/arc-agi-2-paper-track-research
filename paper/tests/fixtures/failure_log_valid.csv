@@ -1,0 +1,2 @@
+experiment_id,task_id,output_index,anchor_pass2,portfolio_oracle_pass2,selected_pass2,primary_failure_code,secondary_tags,correct_candidate_id,selected_attempt1_id,selected_attempt2_id,gate_action,evidence_snapshot_hash,reviewer,review_date,notes
+unit-selector,0a1b2c3d,0,0,1,0,F09,beneficial_override;gate_reject,program-1,anchor-1,anchor-2,reject,0000000000000000000000000000000000000000000000000000000000000000,unit,2026-09-09,fixture only
